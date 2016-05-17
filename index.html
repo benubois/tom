@@ -9,68 +9,100 @@
 	<!--[if lt IE 9]>
 	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 	<![endif]-->
-	<style>
-  * {
-    padding: 0;
-    margin: 0;
+  <style type="text/css" media="screen">
+  *,*:before,*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
   }
   body {
-    background-color: #BED3E3;
+    font-family: Georgia, sans-serif;
+    font-size: 14px;
+    font-size: 1.2em;
+    line-height: 1.6;
+    color: #333;
+  }
+  h1 {
+    font-size: 2em;
+    margin: 0;
+    line-height: 1;
+  }
+  .subhead {
+    font-family: Helvetica, sans-serif;
+    color: #999;
   }
   p {
-    color: #fff;
-    font-family: Helvetica;
-    font-size: 16px;
-    line-height: 24px;
-    margin-bottom: 22px;
-    -webkit-font-smoothing: antialiased;
-    font-size: 40px;
-    color: #fff;
+      margin: 0 0 1.1em 0;
   }
-  a {
-    color: #fff;
-    font-weight: bold;
-    text-decoration: none;
-    border-bottom: 1px solid rgba(255,255,255,0.3);
+  .container {
+    position: relative;
+    margin: 1em;
+    max-width: 1400px;
   }
-  a:hover {
-    color: #990000;
-    border-bottom: 1px solid rgba(255,255,255,1);
-  }
-  #about {
-    width: 360px;
-    padding: 0 0 0 150px;
-    margin: 50px 50px 0 auto !important;
-  }
-  @media (max-width:767px) {
-    #about {
-      position: relative;
-      width: auto;
-      padding: 20px;
-      margin: 0 !important;
+  @media screen and (min-width: 47.5em ) {
+    .photos {
+      margin-left: 31em;
     }
-    background-image {
-      opacity: 0.2;
+    .about {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 30em;
     }
   }
-	</style>
+  .grid-item {
+    width: 300px;
+    margin: 0 0 10px 10px;
+  }
+  </style>
 </head>
-
 <body>
-  <div id="about">
-    <p><strong>Tom Ubois</strong></p>
-    <p>1933 &ndash; 2016</p>
+  <div class="container">
+      <h1>Tom Ubois</h1>
+      <p class="subhead">1933 &ndash; 2016</p>
   </div>
-
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
-  <script type="text/javascript" src="jquery.backstretch.min.js"></script>
-  <script type="text/javascript">
-  $(function(){
-    $(window).resize(function(){
-      $.backstretch("photo.jpg", {speed: 150});
-    }).resize();
-  });
-  </script>
-
+  <div class="container">
+    <div class="about">
+      <p>Thomas Ubois, 83, of Arlington, VA died on Sunday, April 10 of kidney cancer. He is survived by his wife of 58 years, Marcy Ubois, his brother George Ubois, his children, Jeff and Lynette, and grandchildren, Rose Bultman and Ben Ubois. A memorial gathering will be held at Advent Funeral Home, 7211 Lee Highway, Falls Church, VA on Friday, April 15 from 4 to 6 p.m. with interment at Arlington National Cemetery to follow at a later date. Donations in lieu of flowers to the Arlington Community Foundation (for educational purposes) are encouraged. </p>
+      <p>Born in Ambridge, Pennsylvania to George and Mary Ubois in January 1933, Tom was the fourth of five children, and grew up attending Catholic schools, and working for the local newspaper. </p>
+      <p>One week after high school graduation in 1950, Tom joined his brother George in a cross country trip, settling in California before enlisting in the Navy in 1952. After four years in the Navy, he enrolled at San Francisco State University, where he met Marcy McKay in 1957. They married in 1958 and moved to Berkeley. He pursued graduate studies at the University of California, Berkeley, earning a master’s degree in political science in 1961.  </p>
+      <p>Tom and Marcy came to Washington in 1961, driving across the country in their 1958 Volkswagen beetle, which they purchased instead of an engagement ring. He served as a Presidential Management Intern, first working at the Veterans Administration and then moving to the Bureau of the Budget in 1962. </p>
+      <p>After a year at Princeton University’s Wilson School of Government in 1965-66, Tom returned to the Office of Management and Budget, and then moved to the National Science Foundation in 1971, where he served as executive officer for the National Science Board, and remained until retiring in 1994. </p>
+      <p>Fond memories of federal service include fourth of July fireworks on the White House lawn, testimony before Congress (in favor of spending on science and technology) and whiffs of tear gas during anti-war protests in the early 1970s. </p>
+      <p>With Marcy, Tom traveled: China, Russia, Japan, Ecuador, Australia, Egypt, New Zealand, the Netherlands, Tibet, Italy, France, Spain (where he landed in the newspapers for protesting U.S. adventures in pursuit of WMDs in Iraq), and Croatia, where latent memory of the language surprised traveling companions and perhaps Tom himself. </p>
+      <p>At the same time, he underwent a series of life-threatening events — heart attacks, and then a series of surgeries, radiation treatments, and chemotherapies aimed to control kidney cancer diagnosed in 2002. </p>
+      <p>Tom watched the decline of the American political system with a mix of alarm, amusement and anger tempered by time in Berkeley with his grand daughter Rose and grandson Ben. </p>
+      <p>Tom will be remembered for his warmth, intelligence, and generosity; a talent for speaking with anyone about anything; his resolute refusal to complain; his sense of humor; and his care and love for family members. </p>
+    </div>
+    <div class="photos grid">
+      <img src="images/2.jpg" class="grid-item" />
+      <img src="images/33.jpg" class="grid-item" />
+      <img src="images/24.jpg" class="grid-item" />
+      <img src="images/31.jpg" class="grid-item" />
+      <img src="images/4.jpg" class="grid-item" />
+      <img src="images/30.jpg" class="grid-item" />
+      <img src="images/14.jpg" class="grid-item" />
+      <img src="images/1.jpg" class="grid-item" />
+      <img src="images/29.jpg" class="grid-item" />
+      <img src="images/22.jpg" class="grid-item" />
+      <img src="images/18.jpg" class="grid-item" />
+    </div>
+  </div>
 </body>
+<script src="javascripts/jquery.js"></script>
+<script src="javascripts/masonry.js"></script>
+<script type="text/javascript">
+  $(function() {
+    $('.grid').masonry({
+      itemSelector: '.grid-item',
+      columnWidth: 310
+    });
+  })
+</script>
 </html>
